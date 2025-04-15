@@ -9,8 +9,8 @@ function App() {
       <h2> React & D3 Chart Examples </h2>
       <div className="row">
         <LineChart width={400} height={300} />
-        <TimeSeries />
-        <Histogram />
+        <TimeSeries width={400} height={300} />
+        <Histogram width={400} height={300} />
       </div>
     </div>
   );
