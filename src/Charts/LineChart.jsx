@@ -29,8 +29,9 @@ const LineChart = (props) => {
   };
 
   function drawChart() {
+    d3.select("#container").selectAll("*").remove();
     const margin = { top: 10, right: 50, bottom: 50, left: 50 };
-    // const yMinValue = d3.min(data, (d) => d.value);
+
     const yMaxValue = d3.max(data, (d) => d.value);
     const xMinValue = d3.min(data, (d) => d.label);
     const xMaxValue = d3.max(data, (d) => d.label);

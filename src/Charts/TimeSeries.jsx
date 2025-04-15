@@ -31,6 +31,7 @@ const TimeSeries = (props) => {
   }
 
   function drawChart() {
+    d3.select("#time_series").selectAll("*").remove();
     const margin = { top: 10, right: 50, bottom: 50, left: 50 };
 
     const svg = d3
